@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 8dab6b4c1720dcd4394bc57035aad95c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - enemyBoxCollider: {instanceID: 0}
+  - hit: {fileID: 8300000, guid: c662d34ef1d906e429ca35daaf4a3ad4, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
