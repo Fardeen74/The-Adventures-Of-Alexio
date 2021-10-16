@@ -22,5 +22,10 @@ public class BulletMovement : MonoBehaviour
         transform.position = Vector2.MoveTowards(transform.position, dir, speed * Time.deltaTime);
 
     }
-    
+
+    private void OnBecameInvisible()
+    {
+        Destroy(gameObject);
+    }
+
 }

@@ -8,11 +8,13 @@ public class EnemyMovement : MonoBehaviour
     [SerializeField] private float attackDamage = 10f;
     [SerializeField] private float attackSpeed = 5f;
     private float canAttack;
-    //private bool canFollow;
+    //public Rigidbody2D PlayerRB;
     private Transform target;
 
     public AudioClip DamageClip;
-  
+
+
+    
 
     private void FixedUpdate()
     {

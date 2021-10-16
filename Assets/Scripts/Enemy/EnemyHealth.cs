@@ -11,28 +11,13 @@ public class EnemyHealth : MonoBehaviour
 
     private void Update()
     {
+
         if (enemyHealth <= 0)
         {
             Destroy(gameObject);
             SoundManager.instance.PlaySoundFX(hit);
         }
     }
-
-    /*public void UpdateEnemHealth(float mod)
-    {
-        enemyHealth += mod;
-
-        if (enemyHealth > maxhealth)
-        {
-            enemyHealth = maxhealth;
-        }
-        else if (enemyHealth <= 0f)
-        {
-            enemyHealth = 0f;
-            Debug.Log("Enemy rewspawn");
-        }
-    }
-    */
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

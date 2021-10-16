@@ -9,6 +9,10 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float maxhealth = 100f;
     [SerializeField] private Slider healthSlider;
 
+    public GameObject deathScreen;
+
+    public AudioClip DeathSfx;
+
     void Start()
     {
         health = maxhealth;
@@ -27,8 +31,17 @@ public class PlayerHealth : MonoBehaviour
         else if (health <= 0f)
         {
             health = 0f;
-            Debug.Log("Player rewspawn");
+            healthSlider.value = health;
+            SoundManager.instance.PlaySoundFX(DeathSfx);
+            Playerdied();
         }
+
+    }
+
+    public void Playerdied()
+    {
+        deathScreen.GetComponent<DeathScreen>().deathScreenUI.SetActive(true);
+        Time.timeScale = 0f;
 
     }
 

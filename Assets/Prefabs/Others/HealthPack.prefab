@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 4997631978997521976}
   - component: {fileID: 4997631978997521977}
   - component: {fileID: 4997631978997521974}
-  - component: {fileID: 6336143314464682899}
   m_Layer: 0
   m_Name: HealthPack
   m_TagString: Untagged
@@ -71,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -2132927721
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -5491410114982481563, guid: db7bcf40cd913f74ab8d148881eb2f52, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -123,25 +122,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c05d6aae541939f459e0718efd6c26ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPackValue: 30
-  obj: {fileID: 4997631978997521975}
+  healthPackValue: 20
   healthSound: {fileID: 8300000, guid: b150e1236494d7b46b215067d4d85fd2, type: 3}
---- !u!95 &6336143314464682899
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4997631978997521975}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 496a78490373a59409d229b511ae4816, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0

@@ -682,28 +682,28 @@ TextureImporter:
     second: Enemy_227
   - first:
       213: 5358712291197365961
-    second: Enemy_228
+    second: boss_0
   - first:
       213: -2594064913866358594
-    second: Enemy_229
+    second: boss_1
   - first:
       213: -8774907085105971393
-    second: Enemy_230
+    second: boss_2
   - first:
       213: -5379813646563874992
-    second: Enemy_231
+    second: boss_3
   - first:
       213: -7640421444571066394
-    second: Enemy_232
+    second: boss_4
   - first:
       213: -5268163737908621149
-    second: Enemy_233
+    second: boss_5
   - first:
       213: -5773996799803289205
-    second: Enemy_234
+    second: boss_6
   - first:
       213: 2442590171453766549
-    second: Enemy_235
+    second: boss_7
   - first:
       213: -3520661133472139054
     second: Enemy_236
@@ -5599,7 +5599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_228
+      name: boss_0
       rect:
         serializedVersion: 2
         x: 21
@@ -5620,7 +5620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_229
+      name: boss_1
       rect:
         serializedVersion: 2
         x: 52
@@ -5641,7 +5641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_230
+      name: boss_2
       rect:
         serializedVersion: 2
         x: 85
@@ -5662,7 +5662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_231
+      name: boss_3
       rect:
         serializedVersion: 2
         x: 115
@@ -5683,7 +5683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_232
+      name: boss_4
       rect:
         serializedVersion: 2
         x: 148
@@ -5704,7 +5704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_233
+      name: boss_5
       rect:
         serializedVersion: 2
         x: 180
@@ -5725,7 +5725,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_234
+      name: boss_6
       rect:
         serializedVersion: 2
         x: 212
@@ -5746,11 +5746,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Enemy_235
+      name: boss_7
       rect:
         serializedVersion: 2
-        x: 244
-        y: 112
+        x: 246
+        y: 113
         width: 23
         height: 28
       alignment: 0
