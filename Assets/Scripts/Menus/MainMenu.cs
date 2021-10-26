@@ -6,7 +6,8 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public string GameScene;
-    public GameObject OptionsScreen;
+    public GameObject OptionsPanel;
+    public GameObject ControlsPanel;
 
    public void StartGame()
     {
@@ -16,16 +17,24 @@ public class MainMenu : MonoBehaviour
 
     public void OpenOptions()
     {
-        OptionsScreen.SetActive(true);
+        OptionsPanel.SetActive(true);
 
     }
 
-    public void ClosedOptions()
+    public void CloseOptions()
     {
-        OptionsScreen.SetActive(false);
+        OptionsPanel.SetActive(false);
 
     }
 
+    public void OpenControls()
+    {
+        ControlsPanel.SetActive(true);
+    }
+    public void CloseControls()
+    {
+        ControlsPanel.SetActive(false);
+    }
 
     public void QuitGame()
     {

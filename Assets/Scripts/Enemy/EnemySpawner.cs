@@ -12,13 +12,6 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         SpawnSenemy();
-        
-    }
-
-    
-    void Update()
-    {
-        
     }
 
     public void SpawnSenemy()

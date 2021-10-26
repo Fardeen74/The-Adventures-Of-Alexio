@@ -185,6 +185,7 @@ MonoBehaviour:
   enemyHealth: 100
   enemyBoxCollider: {fileID: 8405031040121443871}
   hit: {fileID: 8300000, guid: c662d34ef1d906e429ca35daaf4a3ad4, type: 3}
+  enemDeath: {fileID: 8300000, guid: 104276f6e24a8144495d7299e2bf6269, type: 3}
 --- !u!114 &8405031040121443867
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -8,22 +8,14 @@ public class DeathScreen : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject deathScreenUI;
+    public GameObject loadGamePanel;
  
 
     public string GameScene;
     public string MainMenuScene;
 
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
+   
 
    public void ActiveDeathScreen()
    {
@@ -42,9 +34,10 @@ public class DeathScreen : MonoBehaviour
         SceneManager.LoadScene(MainMenuScene);
     }
 
-    public void QuitFromDeathScreen()
+    public void LoadfromDeathscreen()
     {
-        Application.Quit();
-        Debug.Log("Game quitted from pause menu");
+        loadGamePanel.SetActive(true);
+        deathScreenUI.SetActive(false);
+        
     }
 }

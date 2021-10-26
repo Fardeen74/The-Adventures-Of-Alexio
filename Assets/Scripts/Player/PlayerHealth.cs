@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
-    private float health = 0f;
+    public float health = 0f;
     [SerializeField] private float maxhealth = 100f;
     [SerializeField] private Slider healthSlider;
 
-    public GameObject deathScreen;
-
     public AudioClip DeathSfx;
+
+    public GameObject deathScreenUI;
 
     void Start()
     {
@@ -33,16 +33,17 @@ public class PlayerHealth : MonoBehaviour
             health = 0f;
             healthSlider.value = health;
             SoundManager.instance.PlaySoundFX(DeathSfx);
-            Playerdied();
+            PlayerDied();
         }
 
     }
 
-    public void Playerdied()
+    public void PlayerDied()
     {
-        deathScreen.GetComponent<DeathScreen>().deathScreenUI.SetActive(true);
+        Debug.Log("Player Dead");
+        deathScreenUI.SetActive(true);
+        GameManager.instance.isOtherUIActive = true;
         Time.timeScale = 0f;
-
     }
 
     private void OnGUI()

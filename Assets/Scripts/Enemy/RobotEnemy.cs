@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class RobotEnemy : MonoBehaviour
 {
@@ -18,6 +19,10 @@ public class RobotEnemy : MonoBehaviour
 
     public AudioClip DamageClip;
 
+    //private static int robotsDestroyed;
+
+    
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -27,11 +32,12 @@ public class RobotEnemy : MonoBehaviour
     private void Start()
     {
         StartCoroutine(Shoot());
+        GameManager.instance.robotsDestroyed = 0;
     }
 
     private void Update()
     {
-        if (Vector2.Distance(transform.position, playerPos.position) > 2.5f)
+        if (Vector2.Distance(transform.position, playerPos.position) > 3f)
         {
             transform.position = Vector2.MoveTowards(transform.position, playerPos.position, speed * Time.deltaTime);
             isInRange = false;
@@ -101,4 +107,10 @@ public class RobotEnemy : MonoBehaviour
         }
     }
 
+    private void OnDestroy()
+    {
+        GameManager.instance.robotsDestroyed += 1;
+    }
+
+  
 }

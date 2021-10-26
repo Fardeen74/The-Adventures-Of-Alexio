@@ -6,7 +6,6 @@ public class BulletMovement : MonoBehaviour
 {
     private float speed = 5;
 
-
     private Vector2 dir;
     void Start()
     {

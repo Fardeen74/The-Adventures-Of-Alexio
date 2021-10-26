@@ -148,7 +148,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.85
+  m_Radius: 1.2
 --- !u!50 &7582344221875646351
 Rigidbody2D:
   serializedVersion: 4
@@ -201,3 +201,4 @@ MonoBehaviour:
   enemyHealth: 20
   enemyBoxCollider: {fileID: 1265820569826496120}
   hit: {fileID: 8300000, guid: c662d34ef1d906e429ca35daaf4a3ad4, type: 3}
+  enemDeath: {fileID: 8300000, guid: 104276f6e24a8144495d7299e2bf6269, type: 3}

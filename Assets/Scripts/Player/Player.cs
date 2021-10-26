@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public GameObject bullet;
+    //public GameObject bullet;
     public float speed = 1f;
     private Animator legAnim;
     public Weapon currentWeapon;

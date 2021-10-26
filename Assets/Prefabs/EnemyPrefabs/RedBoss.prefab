@@ -214,8 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c87af4693f948f84fad260d454d018ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 50
-  maxEnemyHealth: 50
+  enemyHealth: 250
+  maxEnemyHealth: 250
   enemyBoxCollider: {fileID: 3642642366392806219}
   subBossprefab: {fileID: 8405031040121443866, guid: 58f0294fae5046b499acc22bc9a49565, type: 3}
   subBossPos1: {fileID: 3642642365714099422}

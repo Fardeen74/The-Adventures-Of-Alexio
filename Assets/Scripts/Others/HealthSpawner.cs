@@ -5,19 +5,17 @@ using UnityEngine;
 public class HealthSpawner : MonoBehaviour
 {
     public GameObject HealthPSpawn;
-    public float timeToSpawn;
-    private float currentTimetoSpwan;
+    //public float timeToSpawn;
+    //private float currentTimetoSpwan;
 
-    void Start()
+
+    private void Start()
     {
-        
-
+        SpawnHealthPack();
     }
-
-
     void Update()
     {
-        if(currentTimetoSpwan > 0)
+        /*if(currentTimetoSpwan > 0)
         {
             currentTimetoSpwan -= Time.deltaTime;
         }
@@ -26,7 +24,7 @@ public class HealthSpawner : MonoBehaviour
         {
             SpawnHealthPack();
             currentTimetoSpwan = timeToSpawn;
-        }
+        }*/
 
     }
     public void SpawnHealthPack()

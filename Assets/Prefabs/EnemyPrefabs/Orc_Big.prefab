@@ -161,7 +161,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.1
   m_LinearDrag: 0
   m_AngularDrag: 0
   m_GravityScale: 0
@@ -198,6 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dab6b4c1720dcd4394bc57035aad95c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyHealth: 60
+  enemyHealth: 80
   enemyBoxCollider: {fileID: 8934792439981012548}
   hit: {fileID: 8300000, guid: c662d34ef1d906e429ca35daaf4a3ad4, type: 3}
+  enemDeath: {fileID: 8300000, guid: 104276f6e24a8144495d7299e2bf6269, type: 3}

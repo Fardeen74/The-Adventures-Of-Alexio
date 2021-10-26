@@ -9,13 +9,15 @@ public class EnemyHealth : MonoBehaviour
 
     public AudioClip hit;
 
+    public AudioClip enemDeath;
+
     private void Update()
     {
 
         if (enemyHealth <= 0)
         {
+            SoundManager.instance.PlaySoundFX(enemDeath);
             Destroy(gameObject);
-            SoundManager.instance.PlaySoundFX(hit);
         }
     }
 
@@ -23,8 +25,9 @@ public class EnemyHealth : MonoBehaviour
     {
         if (collision.tag == "Bullet" && collision.IsTouching(enemyBoxCollider))
         {
-            // Debug.Log("Hitting box collider");
+            
             enemyHealth -= GameObject.Find("Player").GetComponent<Player>().currentWeapon.damage;
+            SoundManager.instance.PlaySoundFX(hit);
             Destroy(collision.gameObject);
         }
     }

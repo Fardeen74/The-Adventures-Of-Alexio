@@ -14,11 +14,19 @@ public class PauseMenu : MonoBehaviour
     public string MainMenuScene;
 
 
+    private void Start()
+    {
+        if(GameManager.instance.isOtherUIActive == true)
+        {
+            GameManager.instance.isOtherUIActive = false;
+        }
+    }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && GameManager.instance.isOtherUIActive == false)
         {
-            if(GameIsPaused)
+            Cursor.visible = true;
+            if (GameIsPaused)
             {
                 Resume();
             }
