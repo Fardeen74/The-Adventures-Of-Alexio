@@ -1,2 +1,2 @@
 # TheAdventuresOfAlexio
-SEM V game project
+2D Top-down Shooter made with Unity game engine, using C#
